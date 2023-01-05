@@ -34,6 +34,9 @@ We needed a way to represent song waveforms concisely for audio processing.
 Existing music processing literature directed us to MFCCs as a method of representing waveforms in the time domain as a few frequency domain coefficients.
 Since its inception, MFCC has been widely used for audio analysis. It is an efficient and highly informative feature set.
 
+![MFCC](https://user-images.githubusercontent.com/55456557/210796131-58f2343a-8769-4a89-af45-68991ecb3e8d.jpeg)
+
+
 **Genre Prediction:** The second phase brings CNN into the picture for capturing
 the extracted features and using the extracted information to classify songs based
 on their genre.
@@ -87,11 +90,20 @@ The preliminary results showed a test accuracy of 64%. The CNN implementation
 appeared to be overfit, as the accuracy for the training data was 96% versus only 64%
 for the test data.
 
+![Normalized Confusion Matrix1](https://user-images.githubusercontent.com/55456557/210796392-a4d777f7-914b-45c8-83c8-2865a7c3f746.png)
+
+
 Following the initial results, modifications were made to the dataset, where each audio
 file, which was 30 seconds long, was split into audio files of 3 seconds each. This
 increases the size of the dataset exponentially, and the greater the amount of data used
 to train a model, the better will be its performance and accuracy.
 
+![Normalized Confusion Matrix2](https://user-images.githubusercontent.com/55456557/210796427-c0313297-2cc8-4a34-bc9d-8c03764224e0.png)
+
+
 After training the model with the modifications mentioned above, the test accuracy for
 this work improved to 94%. This is in contrast to the validation accuracy of the work
 done by Nikki Pelchat and Craig M Gelowitz which was 67%.
+
+![Validation Plot](https://user-images.githubusercontent.com/55456557/210796523-6c1f3439-8285-47b6-9878-8429282a2394.png)
+
