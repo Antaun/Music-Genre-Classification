@@ -73,6 +73,8 @@ function, and cross-entropy loss. The first layer is a flatten layer which conve
 input data into a single linear vector, which is fed to the subsequent hidden layers. The
 final layer is implemented with a softmax function which normalizes the outputs and
 coverts them into a set of probability values for each of the 10 classes. This was implemented with TensorFlow and Keras.
+
+
 ![CNN Architecture](https://user-images.githubusercontent.com/55456557/210795813-2f87ef47-21e2-4aff-8fa2-cdd627078228.png)
 
 ## Results
